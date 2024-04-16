@@ -7,8 +7,8 @@
     <div class="container">
       <div class="row mt-4">
         <div class="col-sm-12 col-md-6">
-          <div class="card">
-            <img src="" class="card-img-top" alt="...">
+          <div class="card" style="width: 18rem;">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card Title</h5>
               <p class="card-text">Um texto resumido e pequeno</p>
