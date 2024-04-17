@@ -28,7 +28,11 @@ onMounted (()=>{
         </div>
         <div class="col-sm-12 col-md-6">
           <div class="class" style="width: 18rem;">
-            <ListPokemons />
+            <ListPokemons
+              v-for="pokemon in pokemons"
+              :key="pokemon.name"
+              :name="pokemon.name"
+            />
           </div>
         </div>
       </div>
