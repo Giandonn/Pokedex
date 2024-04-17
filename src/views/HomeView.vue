@@ -1,5 +1,6 @@
 <script setup>
 import { onMounted, reactive, ref } from 'vue';
+import ListPokemons from '../components/ListPokemons.vue'
 
 let pokemons = reactive(ref())
 
@@ -8,7 +9,6 @@ onMounted (()=>{
   .then(response => response.json())
   .then(response => {
     pokemons.value = response.results
-    console.log(pokemons)
   });
 })
 </script>
@@ -27,11 +27,9 @@ onMounted (()=>{
           </div>
         </div>
         <div class="col-sm-12 col-md-6">
-          <div class="card" style="width: 18rem;">
-                  <div class="card-body" v-for="pokemon in pokemons" :key="pokemon.name">
-                    {{ pokemon.name }}
-                  </div>
-            </div>
+          <div class="class" style="width: 18rem;">
+            <ListPokemons />
+          </div>
         </div>
       </div>
     </div>
