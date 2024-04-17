@@ -5,7 +5,7 @@
 <template>
     <div class="col-md-4">
         <div class="card mb-3">
-            <p>{{ pokemon.name }}</p>
+            <p class="text-center">{{ pokemon.name }}</p>
         </div>
     </div>
 </template>
