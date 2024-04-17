@@ -27,15 +27,13 @@ onMounted (()=>{
           </div>
         </div>
         <div class="col-sm-12 col-md-6">
-          <div class="class">
-            <div class="card-body">
-              <div class="row">
+          <div class="card">
+            <div class="card-body row">
                 <ListPokemons
                 v-for="pokemon in pokemons"
                 :key="pokemon.name"
                 :name="pokemon.name"
                 />
-              </div>
             </div>
           </div>
         </div>

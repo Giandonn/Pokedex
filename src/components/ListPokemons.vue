@@ -3,8 +3,8 @@
 </script>
 
 <template>
-    <div>
-        <div class="card">
+    <div class="col-md-4">
+        <div class="card mb-3">
             <p>{{ pokemon.name }}</p>
         </div>
     </div>
