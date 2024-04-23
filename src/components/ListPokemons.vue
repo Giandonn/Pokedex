@@ -1,13 +1,13 @@
 <script setup>
     const pokemon = defineProps(["name", "url"]);
     const idPokemon = pokemon.url.split('/')[6];
-    const imageUrl = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + idPokemon + ".png"
+    const imageUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/" + idPokemon + ".svg"
 </script>
 
 <template>
     <div class="col-md-4">
         <div class="card mb-3">
-            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" class="card-img-top" alt="...">
+            <img :src="imageUrl" alt="...">
             <div class="card-body">
                 <p class="card-title">{{ pokemon.name }}</p>
                 <p class="card-text">{{ pokemon.url }}</p>
