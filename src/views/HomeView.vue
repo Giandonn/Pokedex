@@ -33,6 +33,7 @@ onMounted (()=>{
                 v-for="pokemon in pokemons"
                 :key="pokemon.name"
                 :name="pokemon.name"
+                :url="pokemon.url"
                 />
             </div>
           </div>
